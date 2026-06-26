@@ -1,0 +1,17 @@
+                    MAIN
+                      │
+        ┌─────────────┴─────────────┐
+        │                           │
+     Tree Category             Product List
+        │                           │
+        │                           │
+  createCategory()            createProduct()
+        │                           │
+        ├── addCategory()           ├── addProduct()
+        ├── editCategory()          ├── editProduct()
+        ├── deleteCategory()        ├── deleteProduct()
+        ├── findCategory()          ├── findProduct()
+        ├── displayTree()           └── displayProducts()
+        ├── displayChildren()
+        ├── printPath()
+        └── displayAllProducts()
