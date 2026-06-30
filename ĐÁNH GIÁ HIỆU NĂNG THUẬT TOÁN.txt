@@ -1,0 +1,63 @@
+ĐÁNH GIÁ HIỆU NĂNG THUẬT TOÁN
+- Mục đích
+
+Đánh giá hiệu năng nhằm xác định khả năng xử lý dữ liệu của hệ thống thông qua thời gian thực thi và số lần so sánh của các thuật toán được sử dụng.
+
+Trong chương trình, thời gian thực thi được đo bằng thư viện std::chrono, đồng thời số lần so sánh được ghi nhận để so sánh hiệu quả giữa các thuật toán.
+
+- Thuật toán Quick Sort
+
+Quick Sort được sử dụng để sắp xếp danh sách sản phẩm theo tên, giá và số lượng.
+
+Thuật toán hoạt động theo cơ chế chia để trị (Divide and Conquer), sử dụng một phần tử Pivot để phân hoạch dữ liệu thành hai phần và thực hiện đệ quy cho đến khi danh sách được sắp xếp hoàn toàn.
+
+Độ phức tạp
+Tốt nhất: O(n log n)
+Trung bình: O(n log n)
+Xấu nhất: O(n²)
+Đánh giá
+
+Quick Sort cho tốc độ xử lý nhanh và phù hợp với hệ thống quản lý sản phẩm có số lượng dữ liệu lớn.
+
+- Thuật toán Linear Search
+
+Linear Search được sử dụng để tìm kiếm sản phẩm theo từ khóa.
+
+Thuật toán duyệt tuần tự từng phần tử trong danh sách và kiểm tra điều kiện tìm kiếm.
+
+Độ phức tạp
+Tốt nhất: O(1)
+Trung bình: O(n)
+Xấu nhất: O(n)
+Đánh giá
+
+Thuật toán đơn giản, dễ cài đặt và không yêu cầu dữ liệu phải được sắp xếp trước. Tuy nhiên hiệu năng giảm khi kích thước dữ liệu tăng.
+
+- Thuật toán Binary Search
+
+Binary Search được sử dụng để tăng tốc độ tìm kiếm sản phẩm.
+
+Thuật toán liên tục chia đôi không gian tìm kiếm để xác định vị trí phần tử cần tìm.
+
+Độ phức tạp
+Tìm kiếm: O(log n)
+Khi cần sắp xếp trước: O(n log n)
+Đánh giá
+
+Binary Search có tốc độ xử lý nhanh hơn Linear Search và phù hợp với các tập dữ liệu lớn đã được sắp xếp.
+
+- Thuật toán tìm kiếm theo khoảng giá
+
+Chức năng này được sử dụng để lọc các sản phẩm có giá nằm trong khoảng do người dùng chỉ định.
+
+Độ phức tạp
+O(n)
+Đánh giá
+
+Thuật toán đơn giản, dễ triển khai và đáp ứng tốt yêu cầu lọc dữ liệu của hệ thống.
+
+
+- Kết luận
+
+Qua quá trình đánh giá, Quick Sort cho hiệu năng tốt trong việc sắp xếp dữ liệu, Binary Search hỗ trợ tìm kiếm nhanh trên dữ liệu đã được sắp xếp, còn Linear Search và tìm kiếm theo khoảng giá đáp ứng tốt các yêu cầu tìm kiếm linh hoạt. Các thuật toán được lựa chọn phù hợp với quy mô và mục tiêu của hệ thống quản lý sản phẩm.
+
