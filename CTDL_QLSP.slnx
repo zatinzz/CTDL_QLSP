@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="CTDL_QLSP/CTDL_QLSP.vcxproj" Id="99f4c613-b93b-445a-96ea-da61314bf69d" />
+</Solution>
